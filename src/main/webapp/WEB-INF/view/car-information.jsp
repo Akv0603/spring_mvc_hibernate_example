@@ -8,6 +8,8 @@
 <br>
 
 <form:form action="saveCar" modelAttribute="car">
+    <%--    добавим скрытую форму id, для корректного срабатывания обьединения save и update--%>
+    <form:hidden path="id"/>
 
     Brand <form:input path="brand"/>
     <br><br>
@@ -21,5 +23,7 @@
     <input type="submit" value="Ok">
 
 </form:form>
+
 </body>
+
 </html>
