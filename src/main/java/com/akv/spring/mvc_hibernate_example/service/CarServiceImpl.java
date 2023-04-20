@@ -19,4 +19,10 @@ public class CarServiceImpl implements CarService {
     public List<Car> getAllCars() {
         return carDAO.getAllCars();
     }
+
+    @Override
+    @Transactional
+    public void saveCar(Car car) {
+        carDAO.saveCar(car);
+    }
 }

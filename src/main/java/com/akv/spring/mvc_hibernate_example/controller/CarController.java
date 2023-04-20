@@ -21,4 +21,11 @@ public class CarController {
         model.addAttribute("allCars", allCars);
         return "all-cars";
     }
+
+    @RequestMapping("/addNewCar")
+    public String addMyCar(Model model){
+        Car car = new Car();
+        model.addAttribute("car", car);
+        return "car-information";
+    }
 }

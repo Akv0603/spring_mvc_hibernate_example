@@ -7,4 +7,6 @@ import java.util.List;
 public interface CarDAO {
 
     public List<Car> getAllCars();
+
+    public void saveCar(Car car);
 }

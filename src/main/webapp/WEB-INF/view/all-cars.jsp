@@ -4,7 +4,7 @@
 
 <body>
 
-<h2>All Cars</h2>
+<h2>All New Cars</h2>
 <br>
 
 <table>

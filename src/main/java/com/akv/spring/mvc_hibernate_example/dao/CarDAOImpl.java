@@ -20,4 +20,11 @@ public class CarDAOImpl implements CarDAO {
         List<Car> allCars =session.createQuery("from Car ", Car.class).getResultList();
         return allCars;
     }
+
+    @Override
+    public void saveCar(Car car) {
+        Session session = sessionFactory.getCurrentSession();
+        session.saveOrUpdate(car);
+//метод как для сохранения так и для обновления данных
+    }
 }
